@@ -1,0 +1,230 @@
+/* Wix Blog Importer — Admin Styles */
+
+.mwi-wrap {
+    max-width: 820px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.mwi-header {
+    padding: 28px 0 8px;
+    border-bottom: 3px solid #c8954a;
+    margin-bottom: 24px;
+}
+
+.mwi-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0 0 6px;
+}
+
+.mwi-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Cards */
+.mwi-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+
+.mwi-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    color: #1d1d1d;
+}
+
+/* Feed URL row */
+.mwi-field-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mwi-input {
+    flex: 1;
+    min-width: 280px;
+    padding: 9px 12px;
+    font-size: 14px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color .2s;
+}
+.mwi-input:focus {
+    border-color: #c8954a;
+    box-shadow: 0 0 0 2px rgba(200,149,74,.15);
+}
+
+/* Status box */
+.mwi-status-box {
+    margin-top: 14px;
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.mwi-status-box.success {
+    background: #f0faf0;
+    border: 1px solid #7dc97d;
+    color: #2d6a2d;
+}
+.mwi-status-box.error {
+    background: #fff5f5;
+    border: 1px solid #e87171;
+    color: #8b2222;
+}
+.mwi-status-box.loading {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+/* Options table */
+.mwi-options-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.mwi-options-table td {
+    padding: 8px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.mwi-options-table td:first-child {
+    width: 220px;
+    color: #333;
+}
+.mwi-hint {
+    color: #888;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+/* Actions row */
+.mwi-actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.mwi-post-count {
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Progress */
+.mwi-progress-bar-wrap {
+    background: #eee;
+    border-radius: 50px;
+    height: 14px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.mwi-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #c8954a, #e8b46a);
+    border-radius: 50px;
+    transition: width .4s ease;
+}
+#mwi-progress-label {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Log */
+.mwi-log {
+    background: #1a1a2e;
+    border-radius: 6px;
+    padding: 14px 16px;
+    max-height: 320px;
+    overflow-y: auto;
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #c8d8e8;
+}
+.mwi-log .log-success { color: #7ee8a2; }
+.mwi-log .log-info    { color: #a0c8e8; }
+.mwi-log .log-skip    { color: #8ab4d8; }
+.mwi-log .log-warn    { color: #f8d27a; }
+.mwi-log .log-error   { color: #f08080; }
+
+/* Selection list */
+.mwi-selection-list {
+    max-height: 380px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 0;
+}
+.mwi-sel-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+}
+.mwi-sel-row:last-child { border-bottom: none; }
+.mwi-sel-row:hover { background: #f6f9ff; }
+.mwi-sel-title { flex: 1; }
+.mwi-sel-date  { color: #999; font-size: 12px; white-space: nowrap; }
+
+/* Summary */
+.mwi-summary-card {
+    border-color: #7dc97d;
+    background: #f6fff6;
+}
+.mwi-summary-card h2 {
+    color: #2d6a2d;
+}
+#mwi-summary-content {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+.mwi-stat {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #c3e6c3;
+    border-radius: 8px;
+    padding: 12px 24px;
+    min-width: 100px;
+}
+.mwi-stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d6a2d;
+    display: block;
+}
+.mwi-stat-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+/* Spinner */
+.mwi-spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #ccc;
+    border-top-color: #c8954a;
+    border-radius: 50%;
+    animation: mwi-spin .7s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+@keyframes mwi-spin { to { transform: rotate(360deg); } }
